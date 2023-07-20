@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Image_classifier"
+            android:fontFamily="sans-serif-condensed"
+            android:textSize="40dp"
+            android:textColor="#B50404"
+            android:paddingLeft="70dp"
+            android:paddingTop="35dp"
+            ></TextView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginLeft="95dp"
+            android:id="@+id/Image"></ImageView>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/predict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="205dp"
+            android:layout_marginLeft="35dp"
+            android:background="@drawable/btn"
+            android:text="Predict"
+            android:textColor="#000"
+            android:textSize="20dp"></androidx.appcompat.widget.AppCompatButton>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="55dp"
+            android:background="@drawable/btn"
+            android:text="Select Image"
+            android:textColor="#000"
+            android:textSize="20dp"></androidx.appcompat.widget.AppCompatButton>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="45dp"
+            android:layout_marginTop="650dp"
+            android:layout_marginLeft="155dp"
+            android:textColor="#C43D3D"
+            android:textStyle="bold"
+            android:id="@+id/result"
+            android:layout_below="@+id/classified"></TextView>
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>
